@@ -1,0 +1,99 @@
+/* Layout*/
+
+/* Main Banner */
+#main-banner {
+	position: relative;
+	height: 500px;
+	background: #e29791 url(../images/main-banner.jpg) no-repeat center bottom;
+	background-size: cover;
+	color: white;
+}
+
+#main-banner a {
+	color: white
+}
+
+#main-banner a:hover {
+	text-decoration: none;
+}
+
+header {
+	padding-top: 15px;
+}
+
+/* Navbar*/
+
+header nav > ul {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav > ul > li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+/* End Navbar*/
+
+/* Banner Caption */
+
+#action {
+	margin-top: 90px;
+	text-align: center;
+}
+
+#action h1 {
+	padding: 20px 0px;
+	border-bottom: 1px solid white;
+}
+
+/* End Banner Caption*/
+
+/* Banner button*/
+
+#banner-btn {
+	position: absolute;
+	left: 45%;
+	bottom: -10px;
+	background: #e74c3c;
+	padding: 10px 20px;
+	transition: .3s;
+}
+
+@media screen and (max-width: 1024px) {
+	#banner-btn {
+	left: 44.58%;
+}
+}
+
+@media screen and (max-width: 768px) {
+	#banner-btn {
+	left: 43%;
+}
+}
+
+@media screen and (max-width: 425px) {
+	#banner-btn {
+	left: 38%;
+}
+}
+
+@media screen and (max-width: 375px) {
+	#banner-btn {
+	left: 35.5%;
+}
+}
+
+@media screen and (max-width: 320px) {
+	#banner-btn {
+	left: 32%;
+}
+}
+
+/* End Banner button*/
+
+/* End Main Banner*/
+
+/* End Layout*/

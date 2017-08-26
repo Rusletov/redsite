@@ -52,6 +52,13 @@ header {
     background-attachment: fixed; /* Creates Parallax effect*/
 }
 
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    #main-banner {
+        background-attachment: scroll;
+    }
+}
+
 @media screen and (max-width: 768px) {
 	#main-banner {
 	padding-top: 0;

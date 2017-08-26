@@ -55,16 +55,14 @@ header nav > ul {
 
 header nav > ul > li {
 	display: inline-block;
-	padding: 20px;
+	padding: 20px 10px 0px;
 	transition: .3s
 }
 
 header nav > ul > li:hover {
-	padding: 20px;
+	padding: 20px 10px 0px;
 	background: #e74c3c;
 }
-
-header nav > ul > li:hover:odd
 
 /* End Navbar*/
 
@@ -75,8 +73,8 @@ header nav > ul > li:hover:odd
 }
 
 #action > h1 {
-	margin-top: 15%;
-	border-bottom: 2px solid white;
+	margin-top: 20%;
+	border-bottom: 1px solid white;
 	font-size: 3.5em;
 }
 
@@ -109,6 +107,14 @@ header nav > ul > li:hover:odd
 	transition: .3s;
 	text-transform: uppercase;
 	font-size: 1.3em;
+}
+
+#banner-btn:hover {
+	background: #da3423;
+	border: 6px solid rgba(231, 76, 60, .65);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	text-transform: uppercase;
 }
 
 @media screen and (min-width: 2560px) {

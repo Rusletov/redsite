@@ -49,6 +49,7 @@ header {
 	background-size: cover;
 	color: white;
     font-family: 'Rokkitt', serif;
+    background-attachment: fixed; /* Creates Parallax effect*/
 }
 
 @media screen and (max-width: 768px) {
@@ -220,6 +221,12 @@ header nav > ul > li a.active {
 	text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+	#intro {
+		padding-top: 50px;
+	}
+}
+
 main h3 {
 	font-family: 'Myriad Pro Bold';
 	color: red;
@@ -229,6 +236,13 @@ main h3 {
 
 article:first-child p { /* selects the first article in the intro section*/
 	padding: 0 90px;
+}
+
+@media screen and (max-width: 768px) {
+	article:first-child p { /* selects the first article in the intro section*/
+		padding: 0;
+		text-align: justify;
+	}
 }
 
 main .intro-item h4 {

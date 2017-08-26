@@ -6,29 +6,55 @@ body {
 
 @font-face {
     font-family: 'Myriad Pro Cond Regular';
-    src: url(../fonts/MyriadProCondRegular.otf);
-    src: url(../fonts/MyriadProCondRegular.ttf);
-    src: url(../fonts/MyriadProCondRegular.woff);
-    
+    src: url(../fonts/MyriadProCondRegular/MyriadProCondRegular.otf);
+    src: url(../fonts/MyriadProCondRegular/MyriadProCondRegular.ttf);
+    src: url(../fonts/MyriadProCondRegular/MyriadProCondRegular.woff);
 }
 
-header {
-    font-family: 'Mariad Pro Cond';
-    text-transform: uppercase;
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url(../fonts/MyriadProBold/MyriadProBold.otf);
+    src: url(../fonts/MyriadProBold/MyriadProBold.ttf);
+    src: url(../fonts/MyriadProBold/MyriadProBold.woff);
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url(../fonts/MyriadProRegular/MyriadProRegular.otf);
+    src: url(../fonts/MyriadProRegular/MyriadProRegular.ttf);
+    src: url(../fonts/MyriadProRegular/MyriadProRegular.woff);
 }
 
 /* End Typography*/
 
 /* Layout*/
 
+
+@media (min-width:1200px) 
+    {
+        .container{max-width:990px;} /* Changes Bootstrap's max-width */
+    }
+
+header {
+    font-family: 'Mariad Pro Cond';
+    text-transform: uppercase;
+}
+
 /* Main Banner */
 #main-banner {
 	position: relative;
+	padding-top: 50px;
 	height: 500px;
-	background: #e29791 url(../images/main-banner.jpg) no-repeat center bottom;
+	background: #e29791 url(../images/main-banner.jpg) no-repeat center center;
 	background-size: cover;
 	color: white;
     font-family: 'Rokkitt', serif;
+}
+
+@media screen and (max-width: 768px) {
+	#main-banner {
+	padding-top: 0;
+}
 }
 
 #main-banner a {
@@ -41,7 +67,13 @@ header {
 
 #logo {
 	display: inline-block;
-	padding: 20px;
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	#logo {
+	padding-top: 20px;
+}
 }
 
 /* Navbar*/
@@ -53,15 +85,32 @@ header nav > ul {
 	padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+	header nav > ul {
+	padding-top: 20px;
+}
+}
+
 header nav > ul > li {
 	display: inline-block;
-	padding: 20px 10px 0px;
+}
+
+header nav > ul > li > a {
+	margin: 0 5px;
+	padding: 0;
+	border-bottom: 1px solid transparent;
 	transition: .3s
 }
 
-header nav > ul > li:hover {
-	padding: 20px 10px 0px;
-	background: #e74c3c;
+header nav > ul > li > a:hover {
+	margin: 0 5px;
+	padding: 0;
+	border-bottom: 1px solid white;
+}
+
+header nav > ul > li a.active {
+	color: red!important;
+	border-bottom: 1px solid transparent;
 }
 
 /* End Navbar*/
@@ -73,9 +122,11 @@ header nav > ul > li:hover {
 }
 
 #action > h1 {
-	margin-top: 20%;
+	margin-top: 23%;
+	padding-bottom: 5px;
 	border-bottom: 1px solid white;
 	font-size: 3.5em;
+	word-spacing: -8px;
 }
 
 @media screen and (max-width: 425px) {
@@ -86,6 +137,8 @@ header nav > ul > li:hover {
 
 #main-banner h2 {
     font-family: 'Quicksand', sans-serif;
+    padding-top: 0.7em;
+    letter-spacing: 1px;
     font-size: 1.3em;
 }
 
@@ -97,16 +150,16 @@ header nav > ul > li:hover {
 
 #banner-btn {
 	position: absolute;
-	left: 41%;
-	bottom: -27px;
+	left: 41.59%;
+	bottom: -29px;
 	background: #e74c3c;
-	padding: 8px 46px;
+	padding: 8px 52px;
 	border: 6px solid rgba(231, 76, 60, .65);
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 	transition: .3s;
 	text-transform: uppercase;
-	font-size: 1.3em;
+	font-size: 1.35em;
 }
 
 #banner-btn:hover {
@@ -125,7 +178,7 @@ header nav > ul > li:hover {
 
 @media screen and (max-width: 1024px) {
 	#banner-btn {
-	left: 40%;
+	left: 38%;
 }
 }
 
@@ -137,25 +190,62 @@ header nav > ul > li:hover {
 
 @media screen and (max-width: 425px) {
 	#banner-btn {
-	left: 25%;
+	left: 22%;
 }
 }
 
 @media screen and (max-width: 375px) {
 	#banner-btn {
-	left: 21%;
+	left: 19%;
 }
 }
 
 @media screen and (max-width: 320px) {
 	#banner-btn {
-	left: 17%;
+	left: 14%;
 }
 }
 
 /* End Banner button*/
 
 /* End Main Banner*/
+
+/* Main Content*/
+
+#intro {
+	padding-top: 147px;
+	font-family: 'Myriad Pro Regular';
+	font-size: 1.1em;
+	color: #95a5a6;
+	text-align: center;
+}
+
+main h3 {
+	font-family: 'Myriad Pro Bold';
+	color: red;
+	font-size: 2.2em;
+	padding-bottom: .9em;
+}
+
+article:first-child p { /* selects the first article in the intro section*/
+	padding: 0 90px;
+}
+
+main .intro-item h4 {
+	font-family: 'Myriad Pro Bold';
+	color: red;
+	font-size: 1.2em;
+	padding-bottom: .9em;
+}
+
+main .intro-item p {
+	font-size: .9em;
+	padding: 0;
+	text-align: justify;
+}
+
+
+/* End Main Content */
 
 /* End Layout*/
 

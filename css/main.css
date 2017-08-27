@@ -2,6 +2,7 @@
 
 body {
 	font-size: medium;
+	height: 10000px;
 }
 
 @font-face {
@@ -218,6 +219,8 @@ header nav > ul > li a.active {
 
 /* Main Content*/
 
+/* Intro section */
+
 #intro {
 	padding-top: 147px;
 	padding-bottom: 50px;
@@ -286,7 +289,108 @@ main .intro-item p {
 	padding: 0;
 	text-align: justify;
 }
+/* End Intro section */
 
+/* Gallery section*/
+
+#gallery {
+	padding-top: 65px;
+}
+
+#gallery .img-container {
+	padding: 10px;
+
+}
+
+.img-description {
+	position: absolute;
+	bottom: 10px;
+	width: 400px;
+	color: white;
+	background: #e74c3c;
+	border-top: 5px solid #8e2e24;
+	padding: 20px;
+}
+
+.magnifier {
+	background: #e74c3c url(../images/magnifier.png) no-repeat center center;
+	border: 6px solid rgba(142, 46, 36, 0.70);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 10%;
+	left: 67%;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.magnifier {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.img-description {
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.img-description {
+		width: 355px;
+	}
+}
+
+@media screen and (min-width: 425px) {
+	.img-description {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.img-description {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.img-description {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.img-description {
+		width: 340px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.img-description {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.img-description {
+		width: 400px;
+	} /* remove*/
+}
+
+.img-description span:first-child {
+	font-family: 'Rokkitt', serif;
+	display: block;
+	font-size: 1.5em;
+}
+
+.img-description span:last-child {
+	font-family: 'Myriad Pro Regular', serif;
+	color: #9d3b31;
+}
+
+/* End Gallery section*/
 
 /* End Main Content */
 

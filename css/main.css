@@ -5,13 +5,6 @@ body {
 }
 
 @font-face {
-    font-family: 'Myriad Pro Cond Regular';
-    src: url(../fonts/MyriadProCondRegular/MyriadProCondRegular.otf);
-    src: url(../fonts/MyriadProCondRegular/MyriadProCondRegular.ttf);
-    src: url(../fonts/MyriadProCondRegular/MyriadProCondRegular.woff);
-}
-
-@font-face {
     font-family: 'Myriad Pro Bold';
     src: url(../fonts/MyriadProBold/MyriadProBold.otf);
     src: url(../fonts/MyriadProBold/MyriadProBold.ttf);
@@ -36,14 +29,15 @@ body {
     }
 
 header {
-    font-family: 'Mariad Pro Cond';
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.1em;
     text-transform: uppercase;
 }
 
 /* Main Banner */
 #main-banner {
 	position: relative;
-	padding-top: 50px;
+	padding-top: 52px;
 	height: 500px;
 	background: #e29791 url(../images/main-banner.jpg) no-repeat center center;
 	background-size: cover;
@@ -104,20 +98,24 @@ header nav > ul > li {
 }
 
 header nav > ul > li > a {
-	margin: 0 5px;
+	margin: 0 12px;
 	padding: 0;
 	border-bottom: 1px solid transparent;
 	transition: .3s
 }
 
 header nav > ul > li > a:hover {
-	margin: 0 5px;
+	margin: 0 12px;
 	padding: 0;
 	border-bottom: 1px solid white;
 }
 
+header nav > ul > li:last-child > a {
+	margin-right: 0;
+}
+
 header nav > ul > li a.active {
-	color: red!important;
+	color: #e74c3c!important;
 	border-bottom: 1px solid transparent;
 }
 
@@ -222,10 +220,12 @@ header nav > ul > li a.active {
 
 #intro {
 	padding-top: 147px;
+	padding-bottom: 50px;
 	font-family: 'Myriad Pro Regular';
 	font-size: 1.1em;
 	color: #95a5a6;
 	text-align: center;
+	border-bottom: 1px solid #e4e8e8;
 }
 
 @media screen and (max-width: 768px) {
@@ -238,18 +238,39 @@ main h3 {
 	font-family: 'Myriad Pro Bold';
 	color: red;
 	font-size: 2.2em;
-	padding-bottom: .9em;
+	padding-bottom: .8em;
 }
 
-article:first-child p { /* selects the first article in the intro section*/
+#intro div:first-child article:first-child p { /* selects the first article in the intro section*/
 	padding: 0 90px;
+	line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {
-	article:first-child p { /* selects the first article in the intro section*/
+	#intro div:first-child article:first-child p { /* selects the first article in the intro section*/
 		padding: 0;
 		text-align: justify;
 	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	main .intro-item {
+		margin-top: 60px;
+	}
+
+	main #intro .intro-item:first-child {
+		padding-right: 60px;
+	}
+
+	main #intro .intro-item:nth-child(2) {
+		padding: 0 40px;
+	}
+
+	main #intro .intro-item:last-child {
+		padding-left: 60px;
+	}
+
 }
 
 main .intro-item h4 {
@@ -257,10 +278,11 @@ main .intro-item h4 {
 	color: red;
 	font-size: 1.2em;
 	padding-bottom: .9em;
+	padding: 1em;
 }
 
 main .intro-item p {
-	font-size: .9em;
+	font-size: .935em;
 	padding: 0;
 	text-align: justify;
 }

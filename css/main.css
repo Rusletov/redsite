@@ -298,18 +298,13 @@ main .intro-item p {
 }
 
 #gallery .img-container {
-	padding: 10px;
+	padding: 10px 0;
 
 }
 
-.img-description {
-	position: absolute;
-	bottom: 10px;
-	width: 400px;
-	color: white;
-	background: #e74c3c;
-	border-top: 5px solid #8e2e24;
-	padding: 20px;
+#gallery .img-fluid {
+    width: 100%;
+    height: auto;
 }
 
 .magnifier {
@@ -320,8 +315,8 @@ main .intro-item p {
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	top: 10%;
-	left: 67%;
+	top: 8%;
+	right: 8%;
 	cursor: pointer;
 }
 
@@ -331,52 +326,14 @@ main .intro-item p {
 	}
 }
 
-@media screen and (max-width: 320px) {
-	.img-description {
-		width: 300px;
-	}
-}
-
-@media screen and (min-width: 375px) {
-	.img-description {
-		width: 355px;
-	}
-}
-
-@media screen and (min-width: 425px) {
-	.img-description {
-		width: 400px;
-	}
-}
-
-@media screen and (min-width: 576px) {
-	.img-description {
-		width: 400px;
-	}
-}
-
-@media screen and (min-width: 576px) {
-	.img-description {
-		width: 400px;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.img-description {
-		width: 340px;
-	}
-}
-
-@media screen and (min-width: 992px) {
-	.img-description {
-		width: 400px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.img-description {
-		width: 400px;
-	} /* remove*/
+.img-description {
+	position: absolute;
+	bottom: 9px;
+	width: 100%;
+	color: white;
+	background: #e74c3c;
+	border-top: 5px solid #8e2e24;
+	padding: 20px;
 }
 
 .img-description span:first-child {

@@ -152,29 +152,38 @@ header nav > ul > li a.active {
 
 /* End Banner Caption*/
 
-/* Banner button*/
+/* Buttons */
 
+.red-btn {
+	display: inline-block;
+	color: white;
+	background: #e74c3c;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: 'Rokkitt', serif;
+	font-size: 1.35em;
+}
+
+.red-btn:hover {
+	background: #da3423;
+}
+
+a.red-btn:hover { /* Makes link button's text white*/
+	color: white;
+	text-decoration: none;
+}
+
+/* Banner button*/
 
 #banner-btn {
 	position: absolute;
 	left: 41.59%;
 	bottom: -29px;
-	background: #e74c3c;
 	padding: 8px 52px;
 	border: 6px solid rgba(231, 76, 60, .65);
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 	transition: .3s;
-	text-transform: uppercase;
-	font-size: 1.35em;
-}
-
-#banner-btn:hover {
-	background: #da3423;
-	border: 6px solid rgba(231, 76, 60, .65);
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-	text-transform: uppercase;
 }
 
 @media screen and (min-width: 2560px) {
@@ -214,6 +223,18 @@ header nav > ul > li a.active {
 }
 
 /* End Banner button*/
+
+/* Gallery Button*/
+
+#gallery-btn {
+	margin-top: 6px;
+	padding: 12px 63px 12px 32px;
+	background: #e74c3c url(../images/arrow.png) no-repeat 90% center;
+}
+
+/* End Gallery Button*/
+
+/* End Buttons*/
 
 /* End Main Banner*/
 
@@ -295,6 +316,8 @@ main .intro-item p {
 
 #gallery {
 	padding-top: 65px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e4e8e8;
 }
 
 #gallery .img-container {

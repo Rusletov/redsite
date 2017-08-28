@@ -244,13 +244,13 @@ main h3 {
 	padding-bottom: .8em;
 }
 
-#intro div:first-child article:first-child p { /* selects the first article in the intro section*/
-	padding: 0 90px;
+#intro div:first-child article:first-child p { 
+	padding: 0 10px;
 	line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {
-	#intro div:first-child article:first-child p { /* selects the first article in the intro section*/
+	#intro div:first-child article:first-child p { 
 		padding: 0;
 		text-align: justify;
 	}
@@ -259,7 +259,7 @@ main h3 {
 @media screen and (min-width: 1024px) {
 
 	main .intro-item {
-		margin-top: 60px;
+		margin-top: 55px;
 	}
 
 	main #intro .intro-item:first-child {
@@ -274,7 +274,7 @@ main h3 {
 		padding-left: 60px;
 	}
 
-}
+}   
 
 main .intro-item h4 {
 	font-family: 'Myriad Pro Bold';
@@ -299,6 +299,7 @@ main .intro-item p {
 
 #gallery .img-container {
 	padding: 10px 0;
+	margin: 0 15px 40px 15px;
 
 }
 
@@ -307,7 +308,10 @@ main .intro-item p {
     height: auto;
 }
 
+
 .magnifier {
+	opacity: 0;
+	transition: opacity .6s ease-in;
 	background: #e74c3c url(../images/magnifier.png) no-repeat center center;
 	border: 6px solid rgba(142, 46, 36, 0.70);
     -webkit-background-clip: padding-box; /* for Safari */
@@ -320,13 +324,9 @@ main .intro-item p {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-	.magnifier {
-		display: none;
-	}
-}
-
 .img-description {
+	opacity: 0;
+	transition: opacity .3s ease-in;
 	position: absolute;
 	bottom: 9px;
 	width: 100%;
@@ -345,6 +345,11 @@ main .intro-item p {
 .img-description span:last-child {
 	font-family: 'Myriad Pro Regular', serif;
 	color: #9d3b31;
+}
+
+.img-container:hover .magnifier,
+.img-container:hover .img-description {
+	opacity: 1;
 }
 
 /* End Gallery section*/

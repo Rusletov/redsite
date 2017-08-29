@@ -9,3 +9,11 @@ $(document).ready(function() {
 }); // end ready
 
 
+// slides up the main banner
+/*$(document).ready(function() {
+	$('#banner-btn').click(function() {
+		$('#main-banner').slideToggle('slow');  // end slideToggle
+	}); // end click
+}); // end ready
+
+

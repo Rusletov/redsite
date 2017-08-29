@@ -12,8 +12,10 @@
         <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-		<!-- Main CSS and Scripts-->
+		<!-- Main CSS -->
 		<link rel="stylesheet" href="css/main.css">
+		<!-- jQuery UI CSS -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
 		<title>Red Site</title>
 	</head>
@@ -44,7 +46,6 @@
 			<a href="#" class="red-btn" id="banner-btn">Go ahead</a>
 		</section>
 
-
 		<main>
 			<section id="intro" class="container">
 				<div class="row justify-content-center">
@@ -72,7 +73,7 @@
 				</div>
 			</section>
 			<section id="gallery" class="container">
-				<div class="row justify-content-between">
+				<div class="row justify-content-between no-gutters">
 						<div class="col-md-5 img-container">
 							<a href="#" class="magnifier"></a>
 							<img class="img-fluid" src="images/gallery-1.jpg" alt="Buddha" width="400" height="300">
@@ -106,11 +107,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="row justify-content-center text-center">
-						<div class="col-md-8">
-							<a href="#" class="red-btn" id="gallery-btn">View more</a>
-						</div>
+				<div class="row justify-content-center text-center no-gutters">
+					<div class="col-md-8">
+						<a href="#" class="red-btn" id="gallery-btn">View more</a>
 					</div>
+				</div>
 			</section>
 
 			<section id="contact" class="container">
@@ -163,13 +164,15 @@
 			</div>
 		</footer>
 
-		<!-- Optional JavaScript -->
+		<!-- Optional JavaScript --> <!-- The dafault slim version of jQuery was replaced by the usual one-->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+		<!-- jQuery UI -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-		
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

@@ -179,6 +179,7 @@ a.red-btn:hover { /* Makes link button's text white*/
 
 #banner-btn {
 	position: absolute;
+	z-index: 1;
 	left: 41.59%;
 	bottom: -29px;
 	padding: 8px 52px;

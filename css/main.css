@@ -2,7 +2,6 @@
 
 body {
 	font-size: medium;
-	height: 10000px;
 }
 
 @font-face {
@@ -23,6 +22,9 @@ body {
 
 /* Layout*/
 
+ html {
+ 	height: 100%
+ }
 
 @media (min-width:1200px) 
     {
@@ -227,7 +229,7 @@ a.red-btn:hover { /* Makes link button's text white*/
 /* Gallery Button*/
 
 #gallery-btn {
-	margin-top: 6px;
+	margin-top: 0px;
 	padding: 12px 63px 12px 32px;
 	background: #e74c3c url(../images/arrow.png) no-repeat 90% center;
 }
@@ -315,8 +317,7 @@ main .intro-item p {
 /* Gallery section*/
 
 #gallery {
-	padding-top: 65px;
-	padding-bottom: 50px;
+	padding: 65px 0;
 	border-bottom: 1px solid #e4e8e8;
 }
 
@@ -377,7 +378,80 @@ main .intro-item p {
 
 /* End Gallery section*/
 
+/* Contact section */
+
+#contact h5 {
+	font-family: 'Rokkitt', serif;
+	color: #e74c3c;
+	font-size: 3.5em;
+	letter-spacing: -2px;
+	margin: 60px;
+}
+
+@media screen and (max-width: 768px) {
+	#contact h5 {
+	margin: 40px;
+	}
+}
+
+.form-control {
+	font-family: 'Rokkitt', serif;
+	background-color: #e4e8e8;
+	color: #899199;
+	border-radius: 0;
+	padding: .9rem .79rem;
+    font-size: 1.7rem;
+    border: 1px solid transparent;
+}
+
+.form-control:focus {
+	background-color: #f2f3f3;
+	border-color: #a8a8a9;
+}
+
+/* End Contact section */
+
 /* End Main Content */
+
+/* Footer */
+
+footer {
+	min-height: 240px;
+	background: #e74c3c;
+	margin-top: 140px;
+}
+
+.social-nav {
+	display: inline-block;
+	border: 6px solid rgba(231, 76, 60, 0.6);;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	width: 95px;
+	height: 95px;
+	position: relative;
+	top: -40px;
+	cursor: pointer;
+}
+
+#twitter {
+	background: white url(../images/twitter.png) no-repeat center center;
+}
+
+#dribbble {
+	background: white url(../images/dribbble.png) no-repeat center center;
+}
+
+#facebook {
+	background: white url(../images/facebook.png) no-repeat center center;
+}
+
+footer h6 {
+	margin: 25px;
+	font-family: 'Rokkitt', serif;
+	color: white;
+	font-size: 1.5em;
+}
+/* End Footer*/
 
 /* End Layout*/
 

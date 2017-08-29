@@ -78,7 +78,7 @@ header {
 @media screen and (max-width: 768px) {
 	#logo {
 	padding-top: 20px;
-}
+	}
 }
 
 /* Navbar*/
@@ -324,14 +324,12 @@ main .intro-item p {
 #gallery .img-container {
 	padding: 10px 0;
 	margin: 0 15px 40px 15px;
-
 }
 
 #gallery .img-fluid {
     width: 100%;
     height: auto;
 }
-
 
 .magnifier {
 	opacity: 0;
